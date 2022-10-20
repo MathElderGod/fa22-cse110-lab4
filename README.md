@@ -1,1 +1,1 @@
-# Java Scipt is Lit! 
+# Java Script is Lit! 
