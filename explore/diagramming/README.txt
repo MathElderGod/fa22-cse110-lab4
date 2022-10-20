@@ -1,1 +1,0 @@
-You will need to right click on the diagram and open in new page for you to see the diagram correctly.
