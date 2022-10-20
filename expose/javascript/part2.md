@@ -182,21 +182,33 @@
 
 `}`
 
-CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW.
+CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW. The indentation is not pleasant.
 
 ## Functions
 
 17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. 
     
-    - blah blah
+    - The return result will be a size 3 array with values as follows: [2, 4, 6]. Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function. So, this is precisley what is happening on line 13. function modifyArray exececutes with the following parameters listed in the code, which one parameter is an arrray and the other parameter is a call back function. a constant array is made called newArr, and for each element in the array that was passed in originally, being [1, 2, 3], we push the result of calling the callback function on array[i]. Depending on the iteration, it passes 1 in the first iteration, which simply returns 1 * 2 = 2. The process repeats for 2, and 3 for the 2nd and 3rd iterations, returning 4, and 6 respectfully. Thus, once the modifyArray function terminates, newArray will be returned which is of size 3 and contains [2, 4, 6] 
 
 18. The above program only prints out the time once when executed. Modify this code such that the program prints out the time every second.  (This should be a JS file - part2-question18.js)
 
-    - blah blah
+`function printDatePerSecond() {`
+
+`    let d = new Date();`
+
+`    let time = d.toLocaleDateString();`
+
+`    console.log(time);`
+
+`}`
+
+`setInterval(printDatePerSecond, 1000);`
+
+CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW. The indentation is not pleasant.
   
 19. What is the output of the above code? (This should be in your part2.md)
 
-    - blah blah
+    - The expected output from the printNums function is 1, 4, 3 2. Since 1, and 4 do not have a timeout, they get printed out immediately - in this case, 3 has a setTimeout of 0 milliseconds thus it is the third number to be printed. Then once 1 second has passed, the number 2 will be printed. thus the ordering should be 1, 4, 3, 2 with respect to how the values are printed out. 
 
 
 
