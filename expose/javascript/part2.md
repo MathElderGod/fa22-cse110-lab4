@@ -208,7 +208,7 @@ CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW. The indentation is not pleasant
   
 19. What is the output of the above code? (This should be in your part2.md)
 
-    - The expected output from the printNums function is 1, 4, 3 2. Since 1, and 4 do not have a timeout, they get printed out immediately - in this case, 3 has a setTimeout of 0 milliseconds thus it is the third number to be printed. Then once 1 second has passed, the number 2 will be printed. thus the ordering should be 1, 4, 3, 2 with respect to how the values are printed out. 
+    - The expected output from the printNums function is 1, 4, 3 2. Since 1, and 4 do not have a timeout, they get printed out immediately - in this case, 3 has a setTimeout of 0 milliseconds thus it is the third number to be printed. Then once 1 second has passed, the number 2 will be printed. thus the ordering should be 1, 4, 3, 2 with respect to how the values are printed out. Also, another way of interpretting set timeout, is that it has some callback functions set as its parameter. This means that everything within the function executes before the callbacks in the setTimeout. thus, it explains the result. 
 
 
 
