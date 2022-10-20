@@ -84,20 +84,119 @@
 12. Given the above Object, write the notation for:
     - [A] Accessing the value of the name property in the student object
     
-    - student.name
+    - `student.name`
    
     - [B] Accessing the value of the Grad Year property in the student object
   
-    - student['Grad Year']
+    - `student['Grad Year']`
   
     - [c] Calling the function for the greeting property in the student object
 
-    - student.greeting();
+    - `student.greeting();`
   
     - [D] Accessing the name property of the object in the Favorite Teacher property in student
 
-    - student['Favorite Teacher'].name
+    - `student['Favorite Teacher'].name`
 
     - [E] Access index zero in the array of the courseLoad property of the student object
 
-    - student.courseLoad[0]
+    - `student.courseLoad[0]`
+
+
+## Arithmetic 
+13. Arithmetic - For each of the following questions, note down the output as well as a brief explanation why that output was given
+    - [A] ‘3’ + 2
+
+    - '32', since integers in javascript map to their exact string representation, thus theyre concatenated
+
+    - [B] ‘3’ - 2
+
+    - 1, since strings in javascript also map to their exact integer representations thus 3 - 1 = 1
+
+    - [C] 3 + null
+
+    - 3, since null becomes 0 due to javascript conversion. 3 + 0 = 3
+
+    - [D] ‘3’ + null
+
+    - '3null', since null gets converted to its string representation, thus javascript concatenates the strings.
+
+    - [E] true + 3
+
+    - 4, since true is converted to its integer representation. 1 + 3 = 4
+
+    - [F] false + null
+
+    - 0, since theyre both converted to their intger representations. 0 + 0 = 0
+
+    - [G] '3' + undefined
+
+    - '3undefined', since undefined is converted to its string reprsentation. thus the stings are concatenated. 
+
+    - [H] '3' - undefined
+
+    - NaN, since undefined is converted to NaN by javascript. Thus NaN takes over the problem. 
+
+## Comparison
+14. Comparison
+    - [A] ‘2’ > 1
+
+    - true, since strings in javascript map to their exact integer representation, thus 2 > 1.
+
+    - [B] ‘2’ < ‘12’
+
+    - false, since the strings are compared in lexicographic order. In other words, strings are compared letter-by-letter. Thus, '2' > '12'
+
+    - [C] 2 == ‘2’
+
+    - true, since strings in javascript map to their exact integer representation, thus 2 == 2.
+
+    - [D] 2 === ‘2’
+
+    - false, since this is a strict comparison. the data types do not match, thus theyre not equal. 
+
+    - [E] true == 2
+
+    - false, since true is converted to its integer representation which is the number 1. Thus, 1 == 2 is false.
+
+    - [F] true === Boolean(2)
+
+    - true, since Beoolean(2) returns true, true is strictly equals to true. thus true!
+
+15.  Explain the difference between the == and === operators.
+    - == is an equality test. It tests for equality in a non-strict manner through type conversions. 
+    - === is a strict equality operator that checks the equality without type conversion. 
+    - In other words, if a and b are of different types, then a === b immediately returns false without an attempt to convert them, unlike a == b, which will convert them accordingly, and would return true or false depending on the conclusion.
+
+## Loops
+
+16. Given the above Object, write a for...in loop that will iterate through it and print out the value of the property if the property starts with the letter r, or if the value of that property is an odd number.  (This should be in a JS file part2-question16.js)
+
+`for (let key in statistics) {`
+
+  `if (key.startsWith('r') || statistics[key] % 2 == 1) {`
+
+   `console.log(key);`
+
+   `}`
+
+`}`
+
+CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW.
+
+## Functions
+
+17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. 
+    
+    - blah blah
+
+18. The above program only prints out the time once when executed. Modify this code such that the program prints out the time every second.  (This should be a JS file - part2-question18.js)
+
+    - blah blah
+  
+19. What is the output of the above code? (This should be in your part2.md)
+
+    - blah blah
+
+
+
