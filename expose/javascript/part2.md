@@ -164,6 +164,7 @@
     - true, since Beoolean(2) returns true, true is strictly equals to true. thus true!
 
 15.  Explain the difference between the == and === operators.
+
     - == is an equality test. It tests for equality in a non-strict manner through type conversions. 
     - === is a strict equality operator that checks the equality without type conversion. 
     - In other words, if a and b are of different types, then a === b immediately returns false without an attempt to convert them, unlike a == b, which will convert them accordingly, and would return true or false depending on the conclusion.
