@@ -173,15 +173,18 @@
 
 16. Given the above Object, write a for...in loop that will iterate through it and print out the value of the property if the property starts with the letter r, or if the value of that property is an odd number.  (This should be in a JS file part2-question16.js)
 
-`for (let key in statistics) {`
+```
+for (let key in statistics) {
 
-  `if (key.startsWith('r') || statistics[key] % 2 == 1) {`
+  if (key.startsWith('r') || statistics[key] % 2 == 1) {
 
-   `console.log(key);`
+   console.log(statistics[key]);
 
-   `}`
+   }
 
-`}`
+}
+
+```
 
 CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW. The indentation is not pleasant.
 
@@ -193,17 +196,21 @@ CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW. The indentation is not pleasant
 
 18. The above program only prints out the time once when executed. Modify this code such that the program prints out the time every second.  (This should be a JS file - part2-question18.js)
 
-`function printDatePerSecond() {`
+```
 
-`    let d = new Date();`
+function printDatePerSecond() {
 
-`    let time = d.toLocaleDateString();`
+    let d = new Date();
 
-`    console.log(time);`
+    let time = d.toLocaleDateString();
 
-`}`
+    console.log(time);
 
-`setInterval(printDatePerSecond, 1000);`
+}
+
+setInterval(printDatePerSecond, 1000);
+
+```
 
 CHECK THE JS FILE....THIS IS JUST HERE FOR SHOW. The indentation is not pleasant.
   
